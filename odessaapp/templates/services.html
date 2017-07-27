@@ -1,0 +1,64 @@
+{% load static %}
+{% load staticfiles %}
+
+   <!-- Services -->
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Nasze specjalności</h2>
+                    <h3 class="section-subheading text-muted">W Odessie zaskakujemy naszych gości na wiele sposobów.</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-cutlery fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Gastronomia</h4>
+                    <p class="text-muted">Każdego dnia nasi kucharze przygotowują dla naszych gości dania inspirowane kuchnią <strong>ukraińską</strong>, <strong>bałkańską</strong>, <strong>rosyjską</strong> oraz oczywiście <strong>polską</strong>. Zawsze z najświeższych składników.</p>
+{#                    <a href="#services" class="btn btn-xl">Menu</a>#}
+{#                    <a href="#services" class="btn btn-xl">Danie dnia</a>#}
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-music fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Muzyka</h4>
+                    <p class="text-muted"><strong>Odessa</strong> jest miejscem spotkań przy starych dobrych brzmieniach, od <strong>Bluesa</strong> i <strong>Rock'n'Rolla</strong> aż po muzykę klasyczną.</p>
+{#                    <a href="#services" class="btn btn-xl">Zdjęcia</a>#}
+{#                    <a href="#services" class="btn btn-xl">stolik</a>#}
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-birthday-cake fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Imprezy okolicznościowe</h4>
+                    <p class="text-muted">Zapraszamy państwa do świętowania tych szczególnych momentów właśnie u nas. Zapewniamy pyszne jedzenie oraz </br>wiele atrakcji.</p>
+{#                    <a href="#services" class="btn btn-xl">Rezerwacje</a>#}
+                </div>
+            </div>
+
+            <div class="row text-center">
+
+
+                <div class="col-md-4">
+                    <a href="https://www.facebook.com/RestauracjaOdessa/photos/pm.552255761618050/809401985903425/?type=1&theater" class="btn btn-xl">Menu</a>
+                    <a href="{% url 'daily_dish' %}" class="btn btn-xl">Danie dnia</a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://www.facebook.com/RestauracjaOdessa/photos/" class="btn btn-xl">Zdjęcia</a>
+                    <a href="{% url 'contact_us' %}" class="btn btn-xl">Stolik</a>
+                </div>
+                <div class="col-md-4">
+                    <a href="{% url 'contact_us' %}" class="btn btn-xl">Rezerwacja</a>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>

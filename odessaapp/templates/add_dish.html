@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <section>
+    <div class="col-md-3">
+
+    </div>
+
+        <div class="col-md-3-offse">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+
+
+                        <form action="" class="form-inline" method="post" style="margin-bottom: 25px;">
+                            <div class="row">
+                                <div class="col-xs-12 form-column">
+                                    {% csrf_token %}
+                                    {{ form.as_ul }}
+
+                                    <input type="submit" value="Dodaj" class="btn btn-sm btn-info">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+{% endblock %}
